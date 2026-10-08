@@ -1,8 +1,8 @@
 // Drew Anderson
 // this file contains the prototype functions for createCanvas, printCanvas, and freeCanvas
 
-#ifndef canvasMake.h
-#define canvasMake.h
+#ifndef canvasMake_h
+#define canvasMake_h
 
 char **createCanvas(int width, int height);
 

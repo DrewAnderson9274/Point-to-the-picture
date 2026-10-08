@@ -31,7 +31,7 @@ return ' ';
 //width - width of the canvas
 //height - height of the canvas
 char **createCanvas(int width, int height){
-    char **canvas = malloc(height * sizeof(char));
+    char **canvas = malloc(height * sizeof(char *));
 
     for (int i = 0; i < height; i++){
         canvas[i] = malloc(width * sizeof(char));
@@ -39,7 +39,7 @@ char **createCanvas(int width, int height){
 
     for (int i = 0; i < height; i++){
         for (int w = 0; w < width; w++){
-            canvas[i][w] = genRandomChar(80.20, validCharacters, 8);
+            canvas[i][w] = genRandomChar(0.20, validCharacters, 23);
         }
     }
 
@@ -51,9 +51,10 @@ char **createCanvas(int width, int height){
 // returns nothing
 void printCanvas(char **canvas, int width, int height){
     for (int i = 0; i < height; i++){
-        for (int w = 0; w < width; i++){
-            printf("%d\n", canvas[i][w]);
+        for (int w = 0; w < width; w++){
+            printf("%c", canvas[i][w]);
         }
+        printf("\n");
     }
 }
 
