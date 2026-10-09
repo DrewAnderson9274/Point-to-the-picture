@@ -9,8 +9,8 @@ static char validCharacters[] = "!@#$&*_-+=|/~`'.,<>;:?";
 
 
 // returns a random character from the list.
-//characters - list of characters to choose from.
-//size - number of characters contained in the list.
+// characters - list of characters to choose from.
+// size - number of characters contained in the list.
 static char pickChar(char characters[], int size){
     int index = rand() % size;
     return characters[index];
@@ -26,10 +26,10 @@ static char genRandomChar(double chance, char characters[], int size){
 return ' ';
 }
 
-//create the canvas itself
+// create the canvas itself
 // returns the canvas
-//width - width of the canvas
-//height - height of the canvas
+// width - width of the canvas
+// height - height of the canvas
 char **createCanvas(int width, int height){
     char **canvas = malloc(height * sizeof(char *));
 
@@ -47,7 +47,7 @@ char **createCanvas(int width, int height){
 }
 
 // prints the canvas to the screen
-//canvas - memory address where the canvas is stored.
+// canvas - memory address where the canvas is stored.
 // returns nothing
 void printCanvas(char **canvas, int width, int height){
     for (int i = 0; i < height; i++){

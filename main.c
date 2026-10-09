@@ -1,5 +1,6 @@
 // Drew Anderson
 // the main file for the assignment.
+// calls createCanvas, printCanvas, and freeCanvas
 
 
 #include <stdio.h>
